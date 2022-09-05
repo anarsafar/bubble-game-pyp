@@ -3,8 +3,9 @@ const scoreBoard = document.querySelector('.score');
 const gameBoard = document.querySelector('.game-board');
 const input = document.querySelector('input');
 const easyButton = document.querySelector('.easy-button')
-const mediumButton = document.querySelector('.hard-button')
-const hardButton = document.querySelector('.hard-button')
+const mediumButton = document.querySelector('.medium-button')
+const hardButton = document.querySelector('.hard-button');
+
 const name = document.querySelector('.name');
 const stopButton = document.querySelector('.stop-button');
 var audio = new Audio('./mixkit-cartoon-bubbles-popping-732.wav');
@@ -38,7 +39,7 @@ startGame.addEventListener('click', () => {
             bubble.classList.add('bubble');
             bubble.style.top = `${randomX}px`;
             bubble.style.left = `${randomY}px`;
-            
+
             gameBoard.appendChild(bubble);
             console.log(randomX, randomY);
 
@@ -53,6 +54,7 @@ startGame.addEventListener('click', () => {
                 clearInterval(clear);
                 gameBoard.innerHTML = "";
             }
+
             console.log(gameMode)
         }, gameMode);
     }

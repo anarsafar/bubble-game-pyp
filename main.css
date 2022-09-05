@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.game-body {
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.game-container {
+  border: 3px solid gray;
+  height: 700px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-board {
+  width: 400px;
+  height: 400px;
+  background: green;
+  position: relative;
+}
+
+input {
+  margin-block: 1rem;
+  width: 100%;
+}
+
+.bubble {
+  width: 30px;
+  height: 30px;
+  background: red;
+  border-radius: 100%;
+  position: absolute;
+  cursor: pointer;
+}

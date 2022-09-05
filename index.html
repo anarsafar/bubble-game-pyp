@@ -5,31 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bubble game</title>
     <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
-    <main class="game-body">
-        <div class="game-container">
-            <h1>Name: <span class="name"></span></h1>
-            <h1>Score: <span class="score">0</span></h1>
-            <div class="game-board">
-               
+    <div class="game-container">
+        <main class="game-body">
+            <div class="player-board">
+                <div>
+                    <h1>Player: <span class="name"></span></h1>
+                    <h1>Score: <span class="score">0</span></h1>
+                    <h1>High score: <span class="high-score">0</span></h1>
+                </div>
             </div>
-            <input type="text" placeholder="Enter your name">
-            <div class="game-level">
-                <button class="easy-button">Easy</button>
-                <button class="medium-button">Medium</button>
-                <button class="hard-button">Hard</button>
-            </div>
+            <div class="game-board"></div>
             <div class="game-controller">
-                <button class="start-game">Start Game</button>
-                <button class="stop-button">Stop Game</button>
+                <div class="game-level">
+                    <button class="easy-button" disabled>Easy</button>
+                    <button class="medium-button" disabled>Medium</button>
+                    <button class="hard-button" disabled>Hard</button>
+                </div>
+                <div class="game-buttons">
+                    <button class="start-button">Start Game</button>
+                    <button class="stop-button" disabled>Stop Game</button>
+                </div>
             </div>
-        </div>
-
-    </main>
+        </main>
+    </div>
+    <div class="user-name-input">
+        <h1>Bubble Game</h1>
+        <form class="initial-start">
+            <input type="text" placeholder="Enter your name">
+            <button type="submit">Start Game</button>
+        </form>
+    </div>
     <script src="./app.js"></script>
 </body>
 
